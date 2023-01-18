@@ -82,7 +82,7 @@ function timelineTwo() {
             start: "top top",
             pin: true,
             scrub: 1,
-            end: "+=" + (window.innerHeight * 7),
+            end: "+=" + (window.innerHeight * 9),
             markers: true
         }
     })
@@ -108,13 +108,24 @@ function timelineTwo() {
         ease: Power1
     })
     .to("#stop h1", {
-        left: 0,
+        left: "-130%",
+        duration: 2,
         ease: Power1
     }, "same")
     .to("#stop .pi", {
         background: `linear-gradient(to right, #D5A7B4, #B4AAD5)`,
         ease: Power1
     }, "same")
+    .to("#sbtm h3:nth-child(1)", {
+        opacity: 0,
+        delay: .2,
+        ease: Power1
+    }, "same")
+    .to("#sbtm h3:nth-child(2)", {
+        opacity: 1,
+        delay: -1.4,
+        ease: Power1
+    })
 }
 
 
