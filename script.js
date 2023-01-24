@@ -108,7 +108,7 @@ function timelineTwo() {
         ease: Power1
     })
     .to("#stop h1", {
-        left: "-130%",
+        x: "-130%",
         duration: 2,
         ease: Power1
     }, "same")
@@ -129,5 +129,7 @@ function timelineTwo() {
 }
 
 
-timelineOne();
-timelineTwo();
+window.addEventListener("DOMContentLoaded", function(){
+    timelineOne();
+    timelineTwo();
+})
